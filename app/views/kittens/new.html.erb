@@ -1,0 +1,10 @@
+
+<h1>Create new kitten</h1>
+
+
+    <%= form_for(@kitten) do |f| %>
+      <%= render 'fields', f: f %>
+      <%= f.submit "Create kitten" %>
+    <% end %>
+
+</br><%= link_to "Home", kittens_path %>

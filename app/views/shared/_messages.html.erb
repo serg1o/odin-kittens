@@ -1,0 +1,14 @@
+<div class="container">
+  <div>
+    <% flash.each do |name, message| %>
+      <div class="alert alert-info" role="alert">
+        <ul style="list-style-type: none;">
+          <li>
+            <%= content_tag :div, message, :id => "flash_#{name}"%>
+          </li>
+        </ul>
+      </div>
+    <% end %>
+  </div>
+</div>
+

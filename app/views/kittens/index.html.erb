@@ -1,0 +1,11 @@
+
+<h1>All kittens</h1>
+
+<h2><%= render 'shared/messages' %></h2>
+
+<ul>
+
+  <%= render @kittens %> <!-- rails automatically looks for a partial called _kitten.html.erb -->
+</ul>
+<%= link_to "New kitten", new_kitten_path %>
+

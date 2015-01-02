@@ -1,0 +1,10 @@
+<h1>Update kitten</h1>
+
+    <%= form_for(@kitten) do |f| %>
+      <%= render 'fields', f: f %>
+      <%= f.submit "Save changes" %>
+    <% end %>
+</br><%= link_to "Delete this kitten", kitten_path, method: :delete, data: { confirm: "You sure?" } %>
+</br><%= link_to "Home", kittens_path %>
+
+
